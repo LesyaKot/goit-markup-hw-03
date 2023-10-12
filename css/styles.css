@@ -9,9 +9,41 @@ a {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+/* is it right? */
+.container {
+  max-width: 1158px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+  display: flex;
+}
+header .container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.navigation {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 .page-head {
   background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -21,15 +53,14 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  align-self: flex-start;
 }
 .logo-studio {
   color: #2e2f42;
 }
-/* need or no */
 .page-nav {
   color: #2e2f42;
 }
-
 .link {
   font-weight: 500;
   font-size: 16px;
@@ -43,6 +74,8 @@ ol {
 }
 .page-contacts {
   font-style: normal;
+  justify-content: end;
+  gap: 40px;
 }
 .mail-phone {
   font-size: 16px;
@@ -54,16 +87,19 @@ ol {
 :focus {
   color: #404bbf;
 }
+/* HERO */
 .page-solutions {
   background-color: #2e2f42;
+  padding: 120px 0;
+  margin: 0 auto;
 }
-
 .page-title {
   color: #ffffff;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 .page-button {
   background-color: #4d5ae5;
@@ -74,14 +110,38 @@ ol {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  padding: 16px 32px;
 }
-.page-button:hover, :focus {
-  background-color:#404BBF;
+.page-button:hover,
+:focus {
+  background-color: #404bbf;
 }
 
-
-.page-info {
+/* ADVANTAGES */
+.advantages {
   background-color: #fff;
+  padding: 120px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.advantages-menu {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
 }
 .advantages-title {
   color: #2e2f42;
@@ -89,6 +149,7 @@ ol {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .advantages-text {
   font-size: 16px;
@@ -96,9 +157,23 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.advantages-menu .advantages-menu-item {
+  width: calc((100%-72px) / 4);
+}
+/* OUR TEAM SECTION */
 .team-section {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-menu {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+.team-menu .team-item {
+  width: calc(100%-72px) / 4;
 }
 .team-title {
   color: #2e2f42;
@@ -107,8 +182,9 @@ ol {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
-.about-team {
+.team-item {
   background-color: #ffffff;
 }
 .name-title {
@@ -124,7 +200,12 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+/* OUR PORTFOLIO SECTION */
+.portfolio {
+  padding: 120px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;
+}
 .portfolio-title {
   font-size: 36px;
   line-height: 1.2;
@@ -132,6 +213,21 @@ ol {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+.portfolio-menu {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.portfolio-menu .portfolio.menu.item {
+  width: calc((100%-48px) / 3);
+}
+.portfolio.menu.item {
+  padding: 32px 16px;
 }
 .app-title {
   font-weight: 500;
@@ -139,6 +235,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .app-text {
   font-size: 16px;
@@ -146,9 +243,10 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+/* FOOTER */
 .page-bottom {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 .logo {
   color: #4d5ae5;
@@ -158,6 +256,7 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  align-self: flex-start;
 }
 .logo-studio-bottom {
   color: #f4f4fd;
@@ -166,4 +265,9 @@ ol {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 16px;
+  width: 264px;
+}
+footer .container {
+  display: block;
 }
