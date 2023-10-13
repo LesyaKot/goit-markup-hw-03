@@ -24,17 +24,18 @@ img {
   display: block;
 }
 
-/* is it right? */
+/*HEADER */
 .container {
   max-width: 1158px;
-  padding: 0 15px 0 15px;
   margin: 0 auto;
-  
+  padding-left: 15px;
+  padding-right: 15px;
 }
 header .container {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin: 0 auto;
 }
 .navigation {
   display: flex;
@@ -79,12 +80,11 @@ header .container {
 .page-contacts {
   font-style: normal;
     gap: 40px;
-  
+    align-self: flex-end;
   }
-  .contacts-menu{
+.contacts-menu{
     display: flex;
     gap: 40px;
-    
   }
 .mail-phone {
   font-size: 16px;
@@ -102,16 +102,15 @@ header .container {
     margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
-}
+  }
 .page-title {
   color: #ffffff;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  text-align:center;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
-  max-width: 496px;
-  
+  max-width: 496px;    
 }
 .page-button {
   background-color: #4d5ae5;
@@ -173,8 +172,9 @@ header .container {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.advantages-menu .advantages-menu-item{
+.advantages-menu-item{
   width: calc((100% - 72px) / 4);
+  
 }
 /* OUR TEAM SECTION */
 .team-section {
