@@ -33,17 +33,25 @@ img {
 }
 header .container {
   display: flex;
+  align-items:center;
+  
+}
+header .a{
+  display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+
 }
 .navigation {
   gap: 40px;
   display: flex;
   align-items: center;
+
 }
 .page-head {
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -54,6 +62,7 @@ header .container {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  
 }
 .logo-studio {
   color: #2e2f42;
@@ -62,6 +71,7 @@ header .container {
   color: #2e2f42;
   gap: 40px;
   display: flex;
+  
 }
 .link {
   font-weight: 500;
@@ -80,10 +90,14 @@ header .container {
   font-style: normal;
   gap: 40px;
   align-self: flex-end;
+  
 }
 .contacts-menu {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
 }
 .mail-phone {
   font-size: 16px;
