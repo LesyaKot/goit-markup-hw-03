@@ -299,10 +299,9 @@ header .a{
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  
-}
-
-
+  display: inline-block;
+  margin-bottom: 16px;
+  }
 
 .logo-studio-bottom {
   color: #f4f4fd;
